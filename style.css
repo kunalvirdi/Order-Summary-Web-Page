@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display',
+    sans-serif;
+    font-size: 16px;
+}
+
+/* Contaner styles start here */
+.container{
+    width: 100%;
+    background: linear-gradient(hsla(225, 100%, 94%,0.7), hsla(225, 100%, 94%,0.7)),
+    url(images/pattern-background-desktop.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+/* Container style end here */
+
+/* Poster container syles starts here */
+.container .poster-container{
+    width: 453px;
+    max-width: 453px;
+    height: 699px;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.hero-img img{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+/* Poster styles end here */
+
+
+/* Order summary starts here */
+.order-summary{
+    width: 296px;
+    margin: 54px auto 25px auto;
+    text-align: center;
+}
+.order-summary h1{
+    margin-bottom: 32px;
+    color: hsl(223, 47%, 23%);
+}
+.order-summary p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+/* Order summary styles end here */
+
+/* Some common styles */
+h1{
+    color: hsl(223, 47%, 23%);
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+}
+
+/* Price area starts here */
+.price-area{
+    padding: 25px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row .col1{
+    display: flex;
+    margin-right: 94px;
+}
+
+.col1 h1, .col1 p{
+    margin-left: 20px;
+}
+.col1 h1{
+    font-size: 1rem;
+}
+/* Price area ends here */
+
+/* Button styles starts here */
+.button{
+    width: fit-content;
+    margin: 25px auto 25px auto;
+    padding: 18px 101px;
+    border:2px solid;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+.button:hover{
+    background-color:#766CF1;
+}
+.btn{
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    font-weight: 900;
+}
+
+/* Button styles end here */
+
+
+/* We have media queries */
+@media(max-width:600px){
+    .container {
+        width: 100%;
+        background: linear-gradient(hsla(225, 100%, 94%, 0.7), hsla(225, 100%, 94%, 0.7)),
+            url(images/pattern-background-mobile.svg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+    }
+    .container .poster-container {
+        width: 327px;
+        max-width: 453px;
+        height: 562px;
+        margin: auto;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .order-summary h1 {
+        margin-bottom: 1rem;
+    }
+    .row .col1 {
+        display: flex;
+        margin-right: 2rem;
+    }
+    .button{
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 10px 85px;
+        margin: 15px auto 15px auto;
+    }
+    .order-summary {
+        width: 250px;
+        margin: 54px auto 25px auto;
+        text-align: center;
+    }
+    .order-summary h1{
+        font-size: 1.75rem;
+    }
+    .order-summary p{
+        font-size: 0.8rem;
+    }
+    .btn{
+        font-weight: 700;
+    }
+    .price-area{
+        height: 84px;
+    }
+
+}
